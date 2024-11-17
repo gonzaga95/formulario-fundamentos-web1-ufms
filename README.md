@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# **Documentação do Projeto: Formulário de Cadastro**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Descrição**
+Este é um projeto em React que implementa um formulário de cadastro com validações e estilizações avançadas. O formulário é composto por campos organizados em categorias (dados pessoais, dados de contato e dados de cadastro) e inclui funcionalidades como validação em tempo real e navegação para uma página de relatório.
 
-## Available Scripts
+O projeto foi desenvolvido para a disciplina **Fundamentos de Web** do curso superior em **Tecnologia da Informação** na **Universidade Federal de Mato Grosso do Sul (AGEAD/UFMS)**. 
 
-In the project directory, you can run:
+Entre em contato comigo via [gonzaga.carlos@ufms.br](mailto:gonzaga.carlos@ufms.br).
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Funcionalidades**
+- **Formulário dinâmico**: Permite a entrada de informações organizadas por categorias.
+- **Validações em tempo real**:
+  - **Data de nascimento**: Deve ser anterior à data atual.
+  - **Celular**: Deve estar no formato brasileiro `(XX) XXXXX-XXXX` ou `(XX) XXXX-XXXX`.
+  - **CEP**: Deve estar no formato brasileiro `XXXXX-XXX`.
+- **Mensagens de erro**: Aparecem em vermelho abaixo dos campos inválidos e permanecem enquanto a validação falhar.
+- **Navegação dinâmica**:
+  - Após o envio dos dados válidos, o formulário redireciona o usuário para uma página de relatório (`/cadastro_resultado`) que exibe os dados submetidos.
+- **Estilização customizada**: O projeto utiliza CSS com classes para estilizar o formulário, os campos e as mensagens de erro.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Configuração do Ambiente**
+### **Pré-requisitos**
+1. **Node.js** (v18.19.1 ou superior).
+2. **npm** (v9.2.0 ou superior).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## **Como Buildar o Projeto**
+1. Clone o repositório para sua máquina:
+   ```bash
+   git clone <url-do-repositorio>
+   ```
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd formulario-react
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. Inicie o projeto:
+   ```bash
+   npm start
+   ```
+5. Acesse o projeto no navegador:
+   [http://localhost:3000](http://localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Estrutura do Projeto**
+### **Componentes**
+- **`Formulario`**:
+  - Componente principal que contém o formulário e suas validações.
+  - Organiza os campos em três categorias: dados pessoais, dados de contato e dados de cadastro.
+- **`Relatorio`**:
+  - Página de relatório que exibe os dados submetidos via query parameters.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### **Validações**
+1. **Data de nascimento**:
+   - Deve ser anterior ao dia atual.
+   - Mensagem: *"A data de nascimento deve ser anterior ao dia atual."*
+2. **Celular**:
+   - Formato esperado: `(XX) XXXXX-XXXX` ou `(XX) XXXX-XXXX`.
+   - Mensagem: *"O número de celular deve estar no formato (XX) XXXXX-XXXX ou (XX) XXXX-XXXX."*
+3. **CEP**:
+   - Formato esperado: `XXXXX-XXX`.
+   - Mensagem: *"O CEP deve estar no formato XXXXX-XXX."*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Classes CSS Utilizadas**
+### **Formulário e Estrutura**
+- `.form`: Estilização principal do formulário.
+- `.fieldset`: Margens e espaçamento entre grupos de campos.
+- `.legend`: Estilização dos títulos de cada categoria.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Inputs e Campos**
+- `input`, `select`: Define o tamanho, bordas e espaçamento dos campos.
+- `input:focus`, `select:focus`: Adiciona destaque ao campo selecionado.
+- `.invalid`: Aplica estilo aos campos com erro de validação (borda e sombra vermelha).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Mensagens de Erro**
+- `.error`: Define o estilo das mensagens de erro com cor vermelha e ajuste de espaçamento.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
