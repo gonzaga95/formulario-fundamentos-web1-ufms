@@ -3,7 +3,7 @@
 ## **Descrição**
 Este é um projeto em React que implementa um formulário de cadastro com validações e estilizações avançadas. O formulário é composto por campos organizados em categorias (dados pessoais, dados de contato e dados de cadastro) e inclui funcionalidades como validação em tempo real e navegação para uma página de relatório.
 
-O projeto foi desenvolvido para a disciplina **Fundamentos de Web** do curso superior em **Tecnologia da Informação** na **Universidade Federal de Mato Grosso do Sul (AGEAD/UFMS)**. 
+Ox' projeto foi desenvolvido para a disciplina **Fundamentos de Web** do curso superior em **Tecnologia da Informação** na **Universidade Federal de Mato Grosso do Sul (AGEAD/UFMS)**. 
 
 Entre em contato comigo via [gonzaga.carlos@ufms.br](mailto:gonzaga.carlos@ufms.br).
 
@@ -32,7 +32,7 @@ Entre em contato comigo via [gonzaga.carlos@ufms.br](mailto:gonzaga.carlos@ufms.
 ## **Como Buildar o Projeto**
 1. Clone o repositório para sua máquina:
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/gonzaga95/formulario-fundamentos-web1-ufms
    ```
 2. Navegue até a pasta do projeto:
    ```bash
